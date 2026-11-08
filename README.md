@@ -1,7 +1,8 @@
 <div align="center">
 
-# PACTRISE
-### Product Feedback & Community
+![Pactrise — Shape what’s next](assets/pactrise-feedback-banner.svg)
+
+# Pactrise Product Feedback & Community
 
 **Better B2B sales, built together.**
 
@@ -59,7 +60,7 @@ For bugs, include reproducible steps, expected versus actual behavior, device/br
 
 ## Community standards
 
-We welcome constructive, respectful, specific feedback. Please read our [contribution guide](CONTRIBUTING.md), [code of conduct](CODE_OF_CONDUCT.md), and [security policy](SECURITY.md) before participating.
+We welcome constructive, respectful, specific feedback. Please read our [contribution guide](CONTRIBUTING.md), [code of conduct](CODE_OF_CONDUCT.md), [security policy](SECURITY.md), and [feedback operations guide](docs/FEEDBACK-OPERATIONS.md) before participating.
 
 ## About Pactrise
 
