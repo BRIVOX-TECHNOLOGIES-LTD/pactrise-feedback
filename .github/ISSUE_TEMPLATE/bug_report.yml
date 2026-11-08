@@ -1,0 +1,66 @@
+name: Bug report
+description: Report an issue with the Pactrise product
+title: "[Bug]: "
+labels: ["type: bug", "status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not share credentials, personal information, private campaign details, or security vulnerabilities. For account-specific issues, use the support link instead.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Registration and sign-in
+        - Company dashboard
+        - Sales partner dashboard
+        - Campaigns
+        - Work files and prospects
+        - Booking and meetings
+        - Payments and rewards
+        - Notifications
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device and browser
+      placeholder: e.g. iPhone, Safari; macOS, Chrome
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Every time
+        - Sometimes
+        - Once
+        - Not sure
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional context (sanitized)
+      description: Attach only screenshots or logs with sensitive details removed.
