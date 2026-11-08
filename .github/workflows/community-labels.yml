@@ -1,0 +1,48 @@
+name: Community label setup
+
+on:
+  push:
+    paths:
+      - ".github/workflows/community-labels.yml"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or update community labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              ["type: feature", "New product capability", "E97832"],
+              ["type: bug", "Product malfunction or regression", "D73A4A"],
+              ["type: improvement", "Enhancement to an existing experience", "E97832"],
+              ["status: triage", "Awaiting initial review", "D4C5F9"],
+              ["status: needs-info", "More information requested", "FBCA04"],
+              ["status: under-review", "Being assessed by the product team", "D4C5F9"],
+              ["status: planned", "Accepted for planning; no date committed", "BFDADC"],
+              ["status: in-progress", "Work is underway", "0E8A16"],
+              ["status: released", "Available in Pactrise", "0E8A16"],
+              ["status: not-planned", "Not currently planned", "E4E669"],
+              ["status: duplicate", "Covered by another issue", "CFD3D7"],
+              ["area: companies", "Company-facing experience", "C2E0C6"],
+              ["area: sales-partners", "Sales partner experience", "C2E0C6"],
+              ["area: campaigns", "Campaign creation and management", "C2E0C6"],
+              ["area: meetings", "Booking and meeting experience", "C2E0C6"],
+              ["area: payments", "Funding and reward experience", "C2E0C6"],
+              ["area: platform", "General platform experience", "C2E0C6"]
+            ];
+            for (const [name, description, color] of labels) {
+              try {
+                await github.rest.issues.getLabel({...context.repo, name});
+                await github.rest.issues.updateLabel({...context.repo, name, description, color});
+              } catch (error) {
+                if (error.status !== 404) throw error;
+                await github.rest.issues.createLabel({...context.repo, name, description, color});
+              }
+            }
