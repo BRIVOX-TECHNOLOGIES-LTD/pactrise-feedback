@@ -1,0 +1,37 @@
+name: Product improvement
+description: Suggest an improvement to an existing workflow or experience
+title: "[Improvement]: "
+labels: ["type: improvement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us how an existing Pactrise experience could be clearer or more effective. Please do not include private information.
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Your perspective
+      options:
+        - Company
+        - Sales partner
+        - Prospective user
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What is difficult today?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: What would you improve?
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact
+      description: Optional explanation of time saved, confusion reduced, or outcomes improved.
