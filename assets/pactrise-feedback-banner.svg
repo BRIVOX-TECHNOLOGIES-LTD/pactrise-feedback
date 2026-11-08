@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+<title id="title">Pactrise Product Feedback</title><desc id="desc">Pactrise feedback community banner in charcoal, white and orange.</desc>
+<rect width="1200" height="360" fill="#17191b"/>
+<g opacity=".13" stroke="#fff" fill="none"><path d="M650 0V360M770 0V360M890 0V360M1010 0V360M1130 0V360M0 90H1200M0 180H1200M0 270H1200"/></g>
+<path d="M845 310L1035 120L1110 195L1200 105" stroke="#ef7937" stroke-width="14" fill="none" stroke-linecap="square"/>
+<circle cx="1035" cy="120" r="15" fill="#ef7937"/><circle cx="1110" cy="195" r="15" fill="#ef7937"/>
+<rect x="56" y="52" width="8" height="37" fill="#ef7937"/>
+<text x="84" y="82" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="28" letter-spacing="5" fill="#fff">PACTRISE</text>
+<text x="56" y="174" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="58" fill="#fff">SHAPE WHAT'S NEXT.</text>
+<text x="59" y="218" font-family="Arial,Helvetica,sans-serif" font-size="23" fill="#c5c6c8">Product feedback. Better workflows. Real outcomes.</text>
+<path d="M58 265H675" stroke="#55585a" stroke-width="1"/>
+<text x="59" y="301" font-family="Arial,Helvetica,sans-serif" font-size="17" letter-spacing="2" fill="#ef7937">IDEAS  /  IMPROVEMENTS  /  BUG REPORTS</text>
+</svg>
